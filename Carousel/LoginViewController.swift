@@ -24,6 +24,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var signInButton: UIButton!
     
+    @IBOutlet weak var didPressBack: UIButton!
     
     
     
@@ -63,12 +64,13 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    
     @IBAction func didPressSignIn(_ sender: AnyObject) {
         // Do login stuff
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
         if emailField.text!.isEmpty || passwordField.text!.isEmpty {
-            delay(2.0, closure: {
+            delay(1.0, closure: {
                 let alertTitle = self.emailField.text!.isEmpty ? "Email" : "Password"
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
@@ -107,6 +109,12 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             view.endEditing(true)
         }
     }
+    
+    @IBAction func didPressBack(_ sender: AnyObject) {        navigationController?.popToRootViewController(animated: true)
+    
+    }
+
+    
     
     
     /*

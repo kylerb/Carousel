@@ -59,6 +59,13 @@
                                             <segue destination="Q8o-Rf-BsB" kind="push" id="j7C-M0-hX6"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe up to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AJ3-e9-x7g">
+                                        <rect key="frame" x="81" y="318" width="161" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.53725490200000003" green="0.54901960780000003" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -97,6 +104,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wBc-Zh-955" userLabel="back Button">
                                 <frame key="frameInset" minX="13" minY="27" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didPressBack:" destination="Q8o-Rf-BsB" eventType="touchUpInside" id="5gd-p6-vhY"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" id="Wva-f6-UWK">
                                 <frame key="frameInset" minY="74"/>
@@ -153,6 +163,7 @@
                                         </subviews>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,6 +178,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="yuw-0R-Alp" id="Gak-IG-8Kh"/>
                         <outlet property="buttonParentView" destination="3jF-UL-B7g" id="WYs-X5-U5R"/>
+                        <outlet property="didPressBack" destination="wBc-Zh-955" id="L4P-Wf-Zwl"/>
                         <outlet property="emailField" destination="rsD-2K-LcB" id="bG8-fM-IF3"/>
                         <outlet property="fieldParentView" destination="XiF-fO-gcn" id="5KR-mi-DNY"/>
                         <outlet property="passwordField" destination="eEY-Uy-15a" id="XuG-kh-atb"/>
