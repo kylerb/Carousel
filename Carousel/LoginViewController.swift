@@ -95,6 +95,18 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didTap(_ sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if signInScrollView.contentOffset.y <= -50 {
+            // Hide the keyboard
+            view.endEditing(true)
+        }
+    }
+    
     
     /*
      // MARK: - Navigation

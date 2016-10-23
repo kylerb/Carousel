@@ -157,6 +157,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="U5w-B6-kaj" appends="YES" id="bLs-Xe-d25"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="n3n-Ui-eCX"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -172,6 +176,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ich-Nn-ugI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="U5w-B6-kaj">
+                    <connections>
+                        <action selector="didTap:" destination="Q8o-Rf-BsB" id="Fr4-8c-keq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1086" y="184"/>
         </scene>
