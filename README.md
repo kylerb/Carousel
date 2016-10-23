@@ -10,7 +10,7 @@ This is a mock Dropbox Carousel app allowing a user to navigate through a first 
 
 - [x] Landing Screen (Static photo tiles on the initial screen; User can scroll to reveal sign in buttons)
 
-- [x] Sign In (Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up; Upon tapping the Sign In button a user is transitioned to welcome screens)
+- [x] Sign In (Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up; Upon tapping the Sign In button a user is transitioned to welcome screens if they have proper credentials (alert view if not!)
 
 - [x] Tutorial screens (user can page between the screens)
 
