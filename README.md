@@ -30,4 +30,4 @@ This is a mock Dropbox Carousel app allowing a user to navigate through a first 
 
 
 
-[![ok.gif](https://s12.postimg.org/d4apf7thp/carousel_demo_gif.gif)
+[![ok.gif](https://s12.postimg.org/b8woztx0d/carousel_demo_gif2.gif)
