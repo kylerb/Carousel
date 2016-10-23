@@ -22,30 +22,36 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile1" id="2NY-1a-tRJ">
-                                        <rect key="frame" x="46" y="748" width="153" height="152"/>
+                                    <view contentMode="scaleToFill" id="gMf-eq-AI9">
+                                        <rect key="frame" x="26" y="728" width="270" height="270"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile2" id="6Yq-gU-nnL">
-                                        <rect key="frame" x="200" y="748" width="76" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile3" id="H7y-13-tZK">
-                                        <rect key="frame" x="200" y="826" width="76" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile4" id="4Qq-ea-qsZ">
-                                        <rect key="frame" x="46" y="903" width="76" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile5" id="o3B-g8-RHf">
-                                        <rect key="frame" x="123" y="903" width="76" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="intro_tile6" id="F0u-16-sJM">
-                                        <rect key="frame" x="200" y="903" width="76" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile1" id="2NY-1a-tRJ">
+                                                <frame key="frameInset" minX="20" minY="20" width="153" height="152"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile2" id="6Yq-gU-nnL">
+                                                <frame key="frameInset" minX="174" minY="20" width="76" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile3" id="H7y-13-tZK">
+                                                <frame key="frameInset" minX="174" minY="98" width="76" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile4" id="4Qq-ea-qsZ">
+                                                <frame key="frameInset" minX="20" minY="175" width="76" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile5" id="o3B-g8-RHf">
+                                                <frame key="frameInset" minX="97" minY="175" width="76" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile6" id="F0u-16-sJM">
+                                                <frame key="frameInset" minX="174" minY="175" width="76" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sEu-UH-8p4">
                                         <rect key="frame" x="22" y="1063" width="278" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,6 +70,12 @@
                     <connections>
                         <outlet property="scrollView" destination="GDa-Tc-DRM" id="EO7-7o-IrB"/>
                         <outlet property="signInButton" destination="sEu-UH-8p4" id="HeB-nP-Aao"/>
+                        <outlet property="tile1View" destination="2NY-1a-tRJ" id="Ciq-mA-25D"/>
+                        <outlet property="tile2View" destination="6Yq-gU-nnL" id="Sq2-5g-ZrR"/>
+                        <outlet property="tile3View" destination="H7y-13-tZK" id="mad-yS-yhd"/>
+                        <outlet property="tile4View" destination="4Qq-ea-qsZ" id="BJA-r1-veH"/>
+                        <outlet property="tile5View" destination="o3B-g8-RHf" id="1Ke-95-Ypz"/>
+                        <outlet property="tile6View" destination="F0u-16-sJM" id="fHh-8R-Ew8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
