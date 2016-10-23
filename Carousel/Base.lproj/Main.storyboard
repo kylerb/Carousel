@@ -143,7 +143,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="didPressSignIn:" destination="Q8o-Rf-BsB" eventType="touchUpInside" id="639-Dt-eN2"/>
-                                                    <segue destination="uzp-v2-6ai" kind="modal" identifier="signInSegue" id="zZm-fF-anQ"/>
                                                 </connections>
                                             </button>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="white" id="yuw-0R-Alp">
@@ -173,6 +172,7 @@
                         <outlet property="passwordField" destination="eEY-Uy-15a" id="XuG-kh-atb"/>
                         <outlet property="signInButton" destination="AHn-vB-99F" id="QTL-t3-L9f"/>
                         <outlet property="signInScrollView" destination="Wva-f6-UWK" id="PYz-Lr-W7M"/>
+                        <segue destination="uzp-v2-6ai" kind="modal" identifier="signInSegue" id="Hr5-XT-EWg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ich-Nn-ugI" userLabel="First Responder" sceneMemberID="firstResponder"/>

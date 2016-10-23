@@ -67,11 +67,12 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Do login stuff
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
-        if emailField.text!.isEmpty && passwordField.text!.isEmpty {
-            delay(0.5, closure: {
+        if emailField.text!.isEmpty || passwordField.text!.isEmpty {
+            delay(2.0, closure: {
+                let alertTitle = self.emailField.text!.isEmpty ? "Email" : "Password"
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
-                let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .alert)
+                let alertController = UIAlertController(title: alertTitle.appending(" required!"), message: "Please enter a valid email and password", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action:UIAlertAction) in
                 })
                 alertController.addAction(okAction)
