@@ -224,24 +224,6 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="oQb-xM-tQA">
-                                        <rect key="frame" x="126" y="510" width="68" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="pageIndicatorTintColor" red="0.60555821657180786" green="0.89863497018814087" blue="0.92091637849807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.086274509803921567" green="0.60392156862745094" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" id="QQm-NL-icY">
-                                        <rect key="frame" x="446" y="510" width="68" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="pageIndicatorTintColor" red="0.60555821657180786" green="0.89863497018814087" blue="0.92091637849807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.086274509799999996" green="0.60392156860000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="2" id="NpY-XE-6Fj">
-                                        <rect key="frame" x="766" y="510" width="68" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="pageIndicatorTintColor" red="0.60555821657180786" green="0.89863497018814087" blue="0.92091637849807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.086274509799999996" green="0.60392156860000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z5j-A1-Cfr">
                                         <rect key="frame" x="978" y="456" width="284" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -252,13 +234,35 @@
                                     </button>
                                 </subviews>
                             </scrollView>
+                            <view contentMode="scaleToFill" misplaced="YES" id="906-3q-rB6" userLabel="pageControlView">
+                                <frame key="frameInset" minY="510" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="Dtb-4u-Xeu">
+                                        <frame key="frameInset" width="320" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="oQb-xM-tQA">
+                                                <frame key="frameInset" minX="126" width="68" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="pageIndicatorTintColor" red="0.60555821657180786" green="0.89863497018814087" blue="0.92091637849807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.086274509803921567" green="0.60392156862745094" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="button" destination="Z5j-A1-Cfr" id="Em0-1N-ICj"/>
                         <outlet property="pageControl" destination="oQb-xM-tQA" id="eRY-57-Ae2"/>
+                        <outlet property="pageControlView" destination="906-3q-rB6" id="4OR-cq-Fv1"/>
                         <outlet property="scrollView" destination="FLw-sE-XSY" id="32S-4b-wbY"/>
                     </connections>
                 </viewController>

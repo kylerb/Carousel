@@ -14,7 +14,11 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var pageControlView: UIView!
 
+    @IBOutlet weak var button: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +28,9 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         
         pageControl.numberOfPages = 4
+        
+        button.alpha = 0
+        
         
         
     }
@@ -39,6 +46,13 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         pageControl.currentPage = page
+
+        if page <= 2 {
+            pageControlView.isHidden = false
+        }   else {
+            pageControlView.isHidden = true
+            button.alpha = 1
+        }
 
 
     }
